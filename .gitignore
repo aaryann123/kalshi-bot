@@ -1,0 +1,25 @@
+# secrets: never commit
+.env
+*.pem
+*.key
+# runtime state
+journal.db
+*.db
+*.sqlite
+*.log
+HALT
+HALT-*
+.lock
+.lock-*
+# research caches and outputs (public market data; scripts regenerate them)
+backtest_cache.json
+scan_cache/
+scan_results.json
+maker_cache/
+*_output.txt
+# python + local
+.venv/
+__pycache__/
+.DS_Store
+.superpowers/
+demo-journal.db
